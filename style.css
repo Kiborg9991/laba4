@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #374151;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  background-color: #ffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: inline-block;
+  width: 1028px;
+  padding: 44px;
+}
+.form__header {
+  margin-bottom: 24px;
+}
+.form__header h1 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #374151;
+  margin: 0;
+}
+.form__header hr {
+  background: #d7dbdf;
+  opacity: 0.5;
+}
+.form__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form__group--label {
+  line-height: 19px;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.form__group {
+  margin-bottom: 24px;
+}
+.form__control--grow {
+    height: 140px !important;
+    display: inline-block;
+  }
+.form__control {
+  background: #ffffff;
+  border: 1px solid #d2d6db;
+  border-radius: 6px;
+  padding: 8px;
+  height: 50px;
+  min-width: 295px;
+}
+.form__checkbox {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 24px;
+}
+.form__checkbox input {
+  display: none;
+}
+.form__checkbox input[type="checkbox"]:checked ~ .form__checkbox--label::before {
+  background: #5850eb !important;
+}
+.form__checkbox--label::before {
+  content: "";
+  margin-right: 8px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #d2d6db;
+  vertical-align: middle;
+}
+.form__submit {
+  padding: 16px 24px;
+  font-weight: 500;
+  color: #ffff;
+  border: 1px solid #d2d6db;
+  background-color: #CCFF99;
+  border-radius: 6px;
+  display: flex;
+  cursor: pointer;
+  margin-left: auto;
+}

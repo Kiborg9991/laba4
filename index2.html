@@ -1,0 +1,90 @@
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+         
+    <title>HTML + CSS Form</title>
+  </head>
+    <body>
+        <form class="form">
+            <div class="form__header">
+                <h1>Форма бронирования номера в отеле </h1>
+                <hr>
+            </div>
+            
+        <div class=form__body>
+                    <div class= "form__col" >
+                    <div class ="form__group">
+                        
+                         <label for="first-name">Фамилия</label><br />
+                        <input type="text" name="first-name" id="first-name" class="form__control" />
+                        </div >
+                    
+                   
+                     <div class ="form__group">
+                          <label for ="email">Почта</label> <br>
+                    <input type="email" name="name" id="email"  class="form__control" placeholder="pahan2007@mail.com" />
+                        
+                    </div>
+                    
+                <div class ="form__group">
+                    <label for="Adress">Адрес</label> <br>
+                       <input type="text" name="adress"  class="form__control" id="adress" />
+                     
+                    </div>
+            
+            </div>
+               
+                   <div class= "form__col">
+                       <div class="form__group">
+                       <label for="last-name">Имя</label>
+                        <br/>
+                        <input type="text" name="name"  class="form__control"  id ="last-name" />
+                   </div>
+            
+                
+                   <div class="form__group">
+                       <label for="number"> Номер телефона </label> <br>
+                       <input type="number" name="number"   class="form__control" id="number" />
+                   </div>
+            
+                   <div class="form__group">
+                       <label for="time">Время на которое вы планируете за бронировать </label> <br>
+                       <input type="text" name="time"   class="form__control" id="time" />
+                   </div>
+            </div>
+                
+                <div class= "form__col">
+                <div class ="form__group">
+                
+                    
+                        <label for="pozhelania">Введите ваши пожелания </label> <br>
+                        <textarea type="text" name="pozhelania"  class="form__control form__control--grow" id="pozhelania" rows="10" clons="30" ></textarea>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form__footer">
+            <div class="form__checkbox">
+              <input type="checkbox" name="newsletter" id="newsletter" />
+              <label for="newsletter" class="form__checkbox--label">Я хочу получать полезную информацию</label>
+            </div>
+            <div class="form__checkbox">
+              <input type="checkbox" name="newsletter-team" id="newsletter-team" />
+              <label for="newsletter-team"
+                     class="form__checkbox--label">Я хочу получать полезную информацию о партнере</label>
+
+            </div>
+          </div>
+            
+            
+            
+            <button type ="submit" class="form__submit">
+                Отправить
+            </button>
+        </form>
+    </body>
+</html>
